@@ -26,7 +26,7 @@ class TestCoffeeMenu(unittest.TestCase):
     # ISSUE: Incorrect assert usage and logic
     # Correct code:
     def test_get_price_non_existing_item(self):
-        self.assertIsNone(self.menu.get_price('foccacia'))
+        self.assertIsNone(self.menu.get_price('focaccia'))
 
     # def test_add_item(self):
     #     self.assertIn(self.menu, 'large latte')
@@ -34,8 +34,8 @@ class TestCoffeeMenu(unittest.TestCase):
     # Should: 1) Add an item first, 2) Verify it was added with correct price
     # Correct code:
     def test_add_item(self):
-        self.menu.add_item('foccacia', 3.50)
-        self.assertEqual(self.menu.get_price('foccacia'), 3.50)
+        self.menu.add_item('focaccia', 3.50)
+        self.assertEqual(self.menu.get_price('focaccia'), 3.50)
 
 if __name__ == '__main__':
     unittest.main()
