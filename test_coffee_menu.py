@@ -9,9 +9,10 @@ class TestCoffeeMenu(unittest.TestCase):
     
     def tearDown(self):
         self.menu = None
-
+    
+    #Methods to test
     def test_get_price_exisisting_item(self):
-        self.assertEqual(self.menu)
+        self.assertTrue(self.menu, CoffeeMenu)
 
     def test_get_price_non_existing_item(self):
         self.assertTrue(self.menu, 'Foccacia')
